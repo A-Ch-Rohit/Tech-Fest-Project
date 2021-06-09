@@ -1,0 +1,142 @@
+  body{
+    background-color:#E8EAF6;
+  }
+	h1
+	{
+		font-family: century gothic;
+		color: #AED6F1;
+		font-size: 40px;
+		margin-top: 0px;
+		text-align: center;
+		background-color:#303F9F;
+		border: 2px solid #303F9F;
+	}
+	.heading
+	{
+		background-color:#5C6BC0;
+	}
+	.heading2
+	{
+		color:#34495E;
+		font-family:arial, sans-serif;
+		font-size: 24px;
+	}
+	h2
+	{
+		color:#34495E;
+		font-family:arial, sans-serif;
+		font-size: 24px;
+	}
+	.box
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		margin: 8px;
+    }		
+	.para
+	{
+
+		color:#34495E;
+		font-size:18px;
+	}
+	table 
+	{
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	td
+	{
+		border: 1px solid #AED6F1;
+		text-align: left;
+		padding: 8px;
+	}
+	th 
+	{
+		color:#E0E0E0;
+		background-color: #303F9F;
+		border: 1px solid #AED6F1;
+		text-align: left;
+		padding: 8px;
+	}
+	tr:nth-child(even) 
+	{
+		background-color: #AED6F1;
+	}
+	.center 
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30%;
+	}
+
+    .flex-container {
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .flex-item-left {
+        background-color: #303F9F;
+        padding: 10px;
+        flex: 50%;
+    }
+
+    .flex-item-middle {
+        background-color: #303F9F;
+        padding: 10px;
+        flex: 20%;
+    }
+
+    .flex-item-right {
+        background-color: #303F9F;
+        padding: 10px;
+        flex: 30%;
+    }
+	.carousel-inner {
+    height: 300px;
+  }
+    .carousel-inner img {
+    width: 100%;
+  }
+	@media screen and (max-width: 600px) {
+	.carousel-inner {
+    	height: 30%;
+    }
+  .center{
+		width: 60%;
+    }
+  .content{
+		font-size:24px;
+    }
+	.para{
+		font-size:12px;
+    }
+	table{
+		width:100%;
+	}
+	table td{
+		font-size:16px;
+		padding:1px;
+	}
+	table th{
+		font-size:16px;
+		padding:1px;
+	}
+    .flex-item-left {
+        padding: 2px;
+        flex: 60%;
+    }
+    .flex-item-middle {
+        flex: 0%;
+    }
+    .flex-item-right {
+        padding: 2px;
+        flex: 27%;
+    }
+	.follow-box-contact{
+		float:left;
+	}
+	
+}

@@ -1,0 +1,181 @@
+<style>
+  body{
+    background-color:#E8EAF6;
+  }
+	h1
+	{
+		font-family: century gothic;
+		color: #AED6F1;
+		font-size: 40px;
+		margin-top: 0px;
+		text-align: center;
+		background-color:#303F9F;
+		border: 2px solid #303F9F;
+	}
+	.heading
+	{
+		background-color:#5C6BC0;
+	}
+	.heading2
+	{
+		color:#34495E;
+		font-family:arial, sans-serif;
+		font-size: 24px;
+	}
+	h2
+	{
+		color:#34495E;
+		font-family:arial, sans-serif;
+		font-size: 24px;
+	}
+	.box
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		margin: 8px;
+    }		
+	.para
+	{
+
+		color:#34495E;
+		font-size:18px;
+	}
+	table 
+	{
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	td
+	{
+		border: 1px solid #AED6F1;
+		text-align: left;
+		padding: 8px;
+	}
+	th 
+	{
+		color:#E0E0E0;
+		background-color: #303F9F;
+		border: 1px solid #AED6F1;
+		text-align: left;
+		padding: 8px;
+	}
+	tr:nth-child(even) 
+	{
+		background-color: #AED6F1;
+	}
+	.center 
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30%;
+	}
+
+    .flex-container {
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .flex-item-left {
+        background-color: #303F9F;
+        padding: 10px;
+        flex: 50%;
+    }
+
+    .flex-item-middle {
+        background-color: #303F9F;
+        padding: 10px;
+        flex: 20%;
+    }
+
+    .flex-item-right {
+        background-color: #303F9F;
+        padding: 10px;
+        flex: 30%;
+    }
+	.carousel-inner {
+    height: 300px;
+  }
+    .carousel-inner img {
+    width: 100%;
+  }
+	@media screen and (max-width: 600px) {
+	.carousel-inner {
+    	height: 30%;
+    }
+  .center{
+		width: 60%;
+    }
+  .content{
+		font-size:24px;
+    }
+	.para{
+		font-size:12px;
+    }
+	table{
+		width:100%;
+	}
+	table td{
+		font-size:16px;
+		padding:1px;
+	}
+	table th{
+		font-size:16px;
+		padding:1px;
+	}
+    .flex-item-left {
+        padding: 2px;
+        flex: 60%;
+    }
+    .flex-item-middle {
+        flex: 0%;
+    }
+    .flex-item-right {
+        padding: 2px;
+        flex: 27%;
+    }
+	.follow-box-contact{
+		float:left;
+	}
+	
+}
+</style>
+<div class="heading">
+  <a routerLink=""><img src="assets/50.png" alt="TechnicalFest" width="400" height="200" class="center"></a>
+</div>
+  <div class="flex-container">
+      <div class="flex-item-left">
+          <ul class="nav" style="background-color: #303F9F;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="" routerLinkActive="active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="Register" routerLinkActive="active">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  routerLink="Events" routerLinkActive="active">Events</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#abt">About us</a>
+              </li>
+            </ul>
+      </div>
+      <div class="flex-item-middle"></div>
+      <div class="flex-item-right">
+          <form class="form-inline my-2 my-lg-0" style="float:right">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </div>
+    
+    </div>
+  <!--Row with two equal columns-->
+  <div class="row">
+      <div class="col-md-12">
+          <div class="content" style="margin-top:2px;text-align: center;font-family: century gothic;color: #AED6F1;background-color: #303F9F;padding: 0px;font-size: 40px;">Events 2020-21: List of Technical Fests/ Events</div>
+      </div>
+  </div>
+
+<router-outlet></router-outlet>
